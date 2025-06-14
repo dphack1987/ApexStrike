@@ -1,36 +1,133 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛡️ ApexStrike
 
-## Getting Started
+Framework avanzado de pruebas de penetración y análisis de seguridad.
 
-First, run the development server:
+## 🚀 Características
+
+- **Escaneo de Puertos**: Detección avanzada de servicios y vulnerabilidades
+- **Análisis Web**: Pruebas de seguridad web y API
+- **Seguridad IoT**: Análisis de dispositivos y redes IoT
+- **Motor de Exploits**: Detección y verificación de vulnerabilidades
+- **Pruebas DoS**: Análisis de resistencia (solo educativo)
+- **Automatización**: Integración con CI/CD y escaneo continuo
+
+## 📋 Requisitos
+
+- Python 3.8+
+- pip
+- Privilegios de administrador (para algunas funciones)
+
+## 🔧 Instalación
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clonar el repositorio
+git clone https://github.com/dphack1987/ApexStrike.git
+cd ApexStrike
+
+# Instalar dependencias
+pip install -r requirements.txt
+
+# Dar permisos de ejecución
+chmod +x pentest_cli.py
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 💡 Uso Básico
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Escaneo de puertos
+./pentest_cli.py -t ejemplo.com portscan
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Análisis web
+./pentest_cli.py -t http://ejemplo.com webscan --deep
 
-## Learn More
+# Análisis de vulnerabilidades
+./pentest_cli.py -t ejemplo.com exploit --deep
 
-To learn more about Next.js, take a look at the following resources:
+# Escaneo IoT
+./pentest_cli.py -t 192.168.1.0/24 iotscan --network
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📊 Módulos Disponibles
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 1. Escaneo de Puertos (portscan)
+- Detección de servicios
+- Fingerprinting de versiones
+- Escaneo de puertos comunes
+- Análisis de banners
 
-## Deploy on Vercel
+### 2. Análisis Web (webscan)
+- Detección de vulnerabilidades web
+- Pruebas de API REST
+- Análisis de headers de seguridad
+- Identificación de tecnologías
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 3. Seguridad IoT (iotscan)
+- Descubrimiento de dispositivos
+- Análisis de protocolos IoT
+- Pruebas de seguridad específicas
+- Detección de configuraciones por defecto
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 4. Motor de Exploits (exploit)
+- Análisis SSL/TLS
+- Detección de inyecciones
+- Pruebas de autenticación
+- Verificación de configuraciones
+
+### 5. Pruebas DoS (dos)
+- Análisis de resistencia
+- Pruebas de carga
+- Simulación de ataques
+- Medición de impacto
+
+## 🔄 Flujo de Trabajo Recomendado
+
+1. **Reconocimiento Inicial**
+   ```bash
+   ./pentest_cli.py -t objetivo.com portscan --top-ports
+   ```
+
+2. **Análisis de Servicios**
+   ```bash
+   ./pentest_cli.py -t objetivo.com webscan --deep
+   ```
+
+3. **Búsqueda de Vulnerabilidades**
+   ```bash
+   ./pentest_cli.py -t objetivo.com exploit --deep
+   ```
+
+4. **Generación de Reportes**
+   ```bash
+   ./pentest_cli.py -t objetivo.com exploit -o reporte_final.json
+   ```
+
+## 📚 Documentación
+
+Para instrucciones detalladas, consulta:
+- [Guía Rápida](GUIA_RAPIDA.md)
+- [Contribuir](CONTRIBUTING.md)
+- [Licencia](LICENSE.md)
+
+## 🤝 Contribuir
+
+1. Fork el proyecto
+2. Crea tu rama de características (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add: nueva característica'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
+
+## 📜 Licencia
+
+Este proyecto está bajo la Licencia MIT - ver [LICENSE.md](LICENSE.md) para detalles.
+
+## ⚠️ Aviso Legal
+
+Esta herramienta está diseñada para pruebas de seguridad autorizadas y éticas. El uso indebido de esta herramienta puede resultar en acciones legales. Los autores no se hacen responsables del mal uso o daños causados por esta herramienta.
+
+## 🌟 Créditos
+
+Desarrollado por el equipo CyberHunters.
+
+---
+
+Made with ❤️ by Security Researchers for Security Researchers
