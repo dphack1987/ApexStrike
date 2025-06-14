@@ -1,6 +1,29 @@
 # 🛡️ ApexStrike
 
+<div align="center">
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Security: Penetration Testing](https://img.shields.io/badge/Security-Penetration%20Testing-red.svg)](https://github.com/dphack1987/ApexStrike)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/dphack1987/ApexStrike/graphs/commit-activity)
+
 Framework avanzado de pruebas de penetración y análisis de seguridad.
+
+[🌐 English](README_EN.md) | [🇪🇸 Español](README.md)
+
+</div>
+
+## 📋 Tabla de Contenidos
+
+- [Características](#-características)
+- [Requisitos](#-requisitos)
+- [Instalación](#-instalación)
+- [Uso Rápido](#-uso-básico)
+- [Módulos](#-módulos-disponibles)
+- [Ejemplos](#-flujo-de-trabajo-recomendado)
+- [Documentación](#-documentación)
+- [Contribuir](#-contribuir)
+- [Licencia](#-licencia)
 
 ## 🚀 Características
 
